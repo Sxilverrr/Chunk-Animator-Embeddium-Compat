@@ -1,5 +1,7 @@
 # Chunk Animator Embeddium Compat
 
+<img width="768" height="456" alt="Chunk Animator + Embeddium" src="https://github.com/user-attachments/assets/a6808469-f9a4-40af-adcf-f216fd639707" />
+
 Chunk Animator Embeddium Compat allows the Chunk Animator mod to work with Embeddium or Xenon.
 
 Chunk Animator crashes on startup when Embeddium or Xenon is installed. Both replace vanilla's chunk-rendering pipeline with their own GPU-instanced per-region rendering, which makes Chunk Animator's mixin unable to find the vanilla call to hook to.

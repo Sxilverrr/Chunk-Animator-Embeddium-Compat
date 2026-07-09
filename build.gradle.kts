@@ -22,7 +22,7 @@ val curseforgeProjectId = property("curseforge_project_id") as String
 val curseforgeReleaseType = findProperty("curseforge_release_type") as String? ?: "release"
 val curseforgeToken = System.getenv("CURSEFORGE_TOKEN") ?: findProperty("curseforge_token")
 
-version = "$minecraftVersion-$modVersion"
+version = minecraftVersion
 group = modGroup
 base {
     archivesName.set(modId)

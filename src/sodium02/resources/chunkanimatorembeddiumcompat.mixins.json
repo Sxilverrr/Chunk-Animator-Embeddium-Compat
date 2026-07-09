@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "dev.sxilverr.chunkanimatorembeddiumcompat.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.8.4",
+  "plugin": "dev.sxilverr.chunkanimatorembeddiumcompat.mixin.CompatMixinPlugin",
+  "client": [
+    "sodium.ChunkRenderContainerMixin",
+    "sodium.MultidrawChunkRenderBackendMixin",
+    "sodium.ChunkRenderBackendOneshotMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

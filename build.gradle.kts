@@ -1,6 +1,5 @@
 plugins {
     id("dev.architectury.loom")
-    id("net.darkhax.curseforgegradle")
 }
 
 val minecraftVersion: String = stonecutter.current.version
@@ -18,9 +17,6 @@ val loaderVersionRange = property("loader_version_range") as String
 val packFormat = property("pack_format") as String
 val compatDeps = (findProperty("compat_deps") as String?)
     ?.split(",")?.map { it.trim() }?.filter { it.isNotEmpty() } ?: emptyList()
-val curseforgeProjectId = property("curseforge_project_id") as String
-val curseforgeReleaseType = findProperty("curseforge_release_type") as String? ?: "release"
-val curseforgeToken = System.getenv("CURSEFORGE_TOKEN") ?: findProperty("curseforge_token")
 
 version = minecraftVersion
 group = modGroup
@@ -95,19 +91,4 @@ tasks.register<Copy>("buildAndCollect") {
     from(tasks.remapJar.get().archiveFile)
     into(rootProject.layout.buildDirectory.file("libs/$modVersion"))
     dependsOn("build")
-}
-
-tasks.register<net.darkhax.curseforgegradle.TaskPublishCurseForge>("publishCurseForge") {
-    group = "project"
-    apiToken = curseforgeToken
-    val artifact = upload(curseforgeProjectId, tasks.remapJar)
-    artifact.releaseType = curseforgeReleaseType
-    artifact.changelog = ""
-    artifact.changelogType = "text"
-    artifact.addModLoader("Forge")
-    artifact.addGameVersion(minecraftVersion)
-    artifact.addJavaVersion(if (javaVersion == JavaVersion.VERSION_17) "Java 17" else "Java 8")
-    artifact.addGameVersion("Client")
-    disableVersionDetection()
-    dependsOn(tasks.remapJar)
 }

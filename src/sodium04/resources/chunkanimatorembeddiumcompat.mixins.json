@@ -1,13 +1,13 @@
 {
   "required": true,
-  "package": "dev.sxilverr.chunkanimatorembeddiumcompat.mixin",
+  "package": "com.sxilverr.chunkanimatorembeddiumcompat.mixin",
   "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8.5",
-  "plugin": "dev.sxilverr.chunkanimatorembeddiumcompat.mixin.CompatMixinPlugin",
+  "plugin": "com.sxilverr.chunkanimatorembeddiumcompat.mixin.CompatMixinPlugin",
   "client": [
     "sodium.RenderSectionMixin",
     "sodium.RegionChunkRendererMixin",
-    "sodium.ShaderChunkRendererMixin"
+    "sodium.ShaderChunkRendererAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

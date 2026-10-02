@@ -1,6 +1,7 @@
 # Chunk Animator Embeddium Compat
 
-<img width="768" height="456" alt="Chunk Animator + Embeddium" src="https://github.com/user-attachments/assets/a6808469-f9a4-40af-adcf-f216fd639707" />
+<img width="768" height="456" alt="banner" src="https://github.com/user-attachments/assets/b2891212-34d1-497d-b4ac-5a70f7ec66a1" />
+
 
 Chunk Animator Embeddium Compat allows the Chunk Animator mod to work with Embeddium or Xenon.
 

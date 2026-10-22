@@ -5,43 +5,35 @@
 <img width="696" height="350" alt="supported mods" src="https://github.com/user-attachments/assets/75e1fe2f-14b8-4bc4-8a58-9f35f1acbcf8" />
 
 
-Chunk Animator Embeddium Compat allows the Chunk Animator mod to work with Embeddium or Xenon.
+Chunk Animator Embeddium Compat makes the Chunk Animator mod work with Embeddium, Xenon, Rubidium or Magnesium on Forge 1.16.5, 1.18.2, 1.19.2 and 1.20.1.
 
-Chunk Animator crashes on startup when Embeddium or Xenon is installed. Both replace vanilla's chunk-rendering pipeline with their own GPU-instanced per-region rendering, which makes Chunk Animator's mixin unable to find the vanilla call to hook to.
+These renderers replace vanilla's chunk rendering with their own batched per-region rendering, so Chunk Animator's hook never runs.
 
-A Mixin plugin stops Chunk Animator's incompatible LevelRenderer mixin at load time when Embeddium or Xenon is detected. New chunks are tracked, and their per-section offset is applied during the alternate renderer's pass via a separate draw per animating chunk. The fast batched path still runs for every static section.
+When one of them is installed, this mod turns off Chunk Animator's render hook and chunks will load inside the renderer's own pass. Chunks that aren't animating still go through the fast batched path.
 
-Oculus runs without Embeddium when Xenon is installed; this mod supports either renderer.
-
-This has been tested with multiple shaders and Sodium/Embeddium add-ons.
+Oculus shaders work too. This has been tested with multiple shaders and Sodium/Embeddium add-ons.
 
 ## Configuration
 
-- `enabled`The master toggle.
-- `animationDurationMs`This is how long each chunk's animation lasts.
-- `startOffsetX` / `startOffsetY` / `startOffsetZ`Control the direction and distance to slide from.
-- `easing`This is animation curve options. `LINEAR`, `QUAD_OUT`, `CUBIC_OUT`, `QUART_OUT`, `QUINT_OUT`, `SINE_OUT`, `EXPO_OUT`, `CIRC_OUT`, `BACK_OUT`, `BOUNCE_OUT`.
-- `disableAroundPlayer` + `playerRadius`This suppresses animations near the player.
+- `enabled` - The master toggle.
+- `animationDurationMs` - How long each chunk's animation lasts.
+- `startOffsetX` / `startOffsetY` / `startOffsetZ` - Control the direction and distance to slide from.
+- `easing` - The animation curve: `LINEAR`, `QUAD_OUT`, `CUBIC_OUT`, `QUART_OUT`, `QUINT_OUT`, `SINE_OUT`, `EXPO_OUT`, `CIRC_OUT`, `BACK_OUT`, `BOUNCE_OUT`.
+- `disableAroundPlayer` + `playerRadius` - Suppresses animations near the player.
 
 ## Requirements
 
-- [Chunk Animator](https://www.curseforge.com/minecraft/mc-mods/chunk-animator) by Lumien231
+- [Chunk Animator](https://www.curseforge.com/minecraft/mc-mods/chunk-animator)
 - One of these:
-  - [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium) by FiniteReality
-  - [Xenon](https://www.curseforge.com/minecraft/mc-mods/xenon) by toni / embeddedt
+  - [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium)
+  - [Xenon](https://www.curseforge.com/minecraft/mc-mods/xenon)
+  - [Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium)
+  - [Magnesium](https://www.curseforge.com/projects/532724)
 
-Embeddium and Xenon are mutually exclusive, install only one.
+These renderers are mutually exclusive, install only one.
 
 ## Notes
 
-This mod is client side only. Servers don't need it.
+This mod is client side only.
 
 This mod replaces Chunk Animator's render hook with its own; you don't need to remove Chunk Animator. Both need to be installed.
-
-## Links
-
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/chunk-animator-embeddium-compat)
-
-## License
-
-MIT. See [LICENSE](LICENSE).

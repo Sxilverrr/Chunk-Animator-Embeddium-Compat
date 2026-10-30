@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "Анімація",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "Увімкнено",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "Вмикає або вимикає всі анімації завантаження чанків.",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "Тривалість анімації (мс)",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "Скільки триває анімація кожного чанка, у мілісекундах.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "Початковий зсув X",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "Початковий зсув по осі X (у блоках), звідки щойно завантажений чанк ковзає на своє місце.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "Початковий зсув Y",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "Початковий зсув по осі Y (у блоках), звідки щойно завантажений чанк ковзає на своє місце. За від'ємних значень він піднімається знизу, за додатних опускається згори.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "Початковий зсув Z",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "Початковий зсув по осі Z (у блоках), звідки щойно завантажений чанк ковзає на своє місце.",
+  "chunkanimatorembeddiumcompat.configuration.easing": "Крива анімації",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "Крива, що застосовується до перебігу анімації. Типове значення: CUBIC_OUT.",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "Вимкнути біля гравця",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "Якщо увімкнено, чанки в радіусі гравця не анімуються.",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "Радіус гравця",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "Радіус (у блоках) навколо гравця, у межах якого анімацію вимкнено, коли ввімкнено «Вимкнути біля гравця»."
+}

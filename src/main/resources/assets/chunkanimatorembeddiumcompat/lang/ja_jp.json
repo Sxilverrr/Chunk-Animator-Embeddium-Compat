@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "アニメーション",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "有効",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "チャンク読み込みアニメーション全体のオン／オフを切り替えます。",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "アニメーション時間（ミリ秒）",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "各チャンクのアニメーションが続く時間（ミリ秒）。",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "開始オフセットX",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "読み込まれたばかりのチャンクが定位置へスライドし始める、X方向の初期オフセット（ブロック単位）。",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "開始オフセットY",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "読み込まれたばかりのチャンクが定位置へスライドし始める、Y方向の初期オフセット（ブロック単位）。負の値では下からせり上がり、正の値では上から落ちてきます。",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "開始オフセットZ",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "読み込まれたばかりのチャンクが定位置へスライドし始める、Z方向の初期オフセット（ブロック単位）。",
+  "chunkanimatorembeddiumcompat.configuration.easing": "イージング",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "アニメーションの進行に適用するイージング曲線。初期値はCUBIC_OUTです。",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "プレイヤー周辺では無効",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "オンにすると、プレイヤー半径内のチャンクはアニメーションしません。",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "プレイヤー半径",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "「プレイヤー周辺では無効」がオンのとき、アニメーションを行わないプレイヤー周囲の半径（ブロック単位）。"
+}

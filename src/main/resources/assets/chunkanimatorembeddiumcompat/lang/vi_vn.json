@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "Hoạt ảnh",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "Bật",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "Bật hoặc tắt toàn bộ hoạt ảnh tải đoạn khúc.",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "Thời lượng hoạt ảnh (ms)",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "Hoạt ảnh của mỗi đoạn khúc kéo dài bao lâu, tính bằng mili giây.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "Độ lệch ban đầu X",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "Độ lệch ban đầu theo trục X (tính bằng khối) mà từ đó một đoạn khúc vừa tải trượt vào vị trí.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "Độ lệch ban đầu Y",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "Độ lệch ban đầu theo trục Y (tính bằng khối) mà từ đó một đoạn khúc vừa tải trượt vào vị trí. Giá trị âm khiến nó trồi lên từ bên dưới, giá trị dương khiến nó rơi xuống từ bên trên.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "Độ lệch ban đầu Z",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "Độ lệch ban đầu theo trục Z (tính bằng khối) mà từ đó một đoạn khúc vừa tải trượt vào vị trí.",
+  "chunkanimatorembeddiumcompat.configuration.easing": "Đường cong chuyển động",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "Đường cong áp dụng cho tiến trình hoạt ảnh. Mặc định là CUBIC_OUT.",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "Tắt quanh người chơi",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "Nếu bật, các đoạn khúc trong bán kính người chơi sẽ không có hoạt ảnh.",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "Bán kính người chơi",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "Bán kính (tính bằng khối) quanh người chơi mà trong đó hoạt ảnh bị tắt khi “Tắt quanh người chơi” được bật."
+}

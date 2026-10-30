@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "Animasi",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "Aktif",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "Menyalakan atau mematikan semua animasi pemuatan bingkah.",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "Durasi Animasi (ms)",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "Berapa lama animasi setiap bingkah berlangsung, dalam milidetik.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "Geseran Awal X",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "Geseran awal pada sumbu X (dalam balok) tempat bingkah yang baru dimuat mulai meluncur ke posisinya.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "Geseran Awal Y",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "Geseran awal pada sumbu Y (dalam balok) tempat bingkah yang baru dimuat mulai meluncur ke posisinya. Nilai negatif membuatnya naik dari bawah, nilai positif membuatnya jatuh dari atas.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "Geseran Awal Z",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "Geseran awal pada sumbu Z (dalam balok) tempat bingkah yang baru dimuat mulai meluncur ke posisinya.",
+  "chunkanimatorembeddiumcompat.configuration.easing": "Kurva Animasi",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "Kurva yang diterapkan pada jalannya animasi. CUBIC_OUT adalah nilai bawaan.",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "Matikan di Sekitar Pemain",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "Jika aktif, bingkah dalam radius pemain tidak dianimasikan.",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "Radius Pemain",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "Radius (dalam balok) di sekitar pemain tempat animasi dimatikan saat “Matikan di Sekitar Pemain” aktif."
+}

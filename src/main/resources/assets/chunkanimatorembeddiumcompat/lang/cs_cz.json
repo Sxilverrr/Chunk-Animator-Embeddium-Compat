@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "Animace",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "Zapnuto",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "Zapíná nebo vypíná všechny animace načítání chunků.",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "Délka animace (ms)",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "Jak dlouho trvá animace každého chunku, v milisekundách.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "Počáteční posun X",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "Počáteční posun na ose X (v blocích), ze kterého právě načtený chunk doklouže na své místo.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "Počáteční posun Y",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "Počáteční posun na ose Y (v blocích), ze kterého právě načtený chunk doklouže na své místo. Při záporných hodnotách vyjede zespodu, při kladných spadne shora.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "Počáteční posun Z",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "Počáteční posun na ose Z (v blocích), ze kterého právě načtený chunk doklouže na své místo.",
+  "chunkanimatorembeddiumcompat.configuration.easing": "Křivka animace",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "Křivka použitá na průběh animace. Výchozí je CUBIC_OUT.",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "Vypnout kolem hráče",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "Pokud je zapnuto, chunky uvnitř poloměru kolem hráče se neanimují.",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "Poloměr kolem hráče",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "Poloměr (v blocích) kolem hráče, ve kterém se animace nepřehrává, když je zapnuto „Vypnout kolem hráče“."
+}

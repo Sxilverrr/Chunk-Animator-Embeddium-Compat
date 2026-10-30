@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "Animación",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "Activado",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "Activa o desactiva todas las animaciones de carga de chunks.",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "Duración de la animación (ms)",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "Cuánto dura la animación de cada chunk, en milisegundos.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "Desplazamiento inicial X",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "Desplazamiento inicial en X (en bloques) desde el que un chunk recién cargado se desliza a su lugar.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "Desplazamiento inicial Y",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "Desplazamiento inicial en Y (en bloques) desde el que un chunk recién cargado se desliza a su lugar. Los valores negativos suben desde abajo; los positivos caen desde arriba.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "Desplazamiento inicial Z",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "Desplazamiento inicial en Z (en bloques) desde el que un chunk recién cargado se desliza a su lugar.",
+  "chunkanimatorembeddiumcompat.configuration.easing": "Suavizado",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "Curva de suavizado que se aplica al progreso de la animación. CUBIC_OUT es el valor predeterminado.",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "Desactivar cerca del jugador",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "Si está activado, los chunks dentro del radio del jugador no se animan.",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "Radio del jugador",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "Radio (en bloques) alrededor del jugador dentro del cual no hay animación cuando “Desactivar cerca del jugador” está activado."
+}

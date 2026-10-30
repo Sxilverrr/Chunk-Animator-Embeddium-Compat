@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "Animasyon",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "Etkin",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "Tüm yığın yükleme animasyonlarını açar veya kapatır.",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "Animasyon Süresi (ms)",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "Her yığının animasyonunun ne kadar süreceği, milisaniye cinsinden.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "Başlangıç Kayması X",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "Yeni yüklenen bir yığının yerine kayarak geldiği başlangıç X kayması (blok cinsinden).",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "Başlangıç Kayması Y",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "Yeni yüklenen bir yığının yerine kayarak geldiği başlangıç Y kayması (blok cinsinden). Negatif değerlerde aşağıdan yükselir, pozitif değerlerde yukarıdan düşer.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "Başlangıç Kayması Z",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "Yeni yüklenen bir yığının yerine kayarak geldiği başlangıç Z kayması (blok cinsinden).",
+  "chunkanimatorembeddiumcompat.configuration.easing": "Yumuşatma Eğrisi",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "Animasyonun ilerleyişine uygulanan yumuşatma eğrisi. Varsayılan: CUBIC_OUT.",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "Oyuncu Çevresinde Devre Dışı Bırak",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "Açıksa, oyuncu yarıçapı içindeki yığınlarda animasyon oynatılmaz.",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "Oyuncu Yarıçapı",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "“Oyuncu Çevresinde Devre Dışı Bırak” açıkken oyuncunun çevresinde animasyonun oynatılmadığı yarıçap (blok cinsinden)."
+}

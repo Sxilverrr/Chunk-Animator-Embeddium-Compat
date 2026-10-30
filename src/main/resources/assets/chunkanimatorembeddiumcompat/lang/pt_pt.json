@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "Animação",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "Ativado",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "Ativa ou desativa todas as animações de carregamento de chunks.",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "Duração da animação (ms)",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "Quanto tempo dura a animação de cada chunk, em milissegundos.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "Deslocamento inicial X",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "Deslocamento inicial em X (em blocos) a partir do qual um chunk acabado de carregar desliza para o seu lugar.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "Deslocamento inicial Y",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "Deslocamento inicial em Y (em blocos) a partir do qual um chunk acabado de carregar desliza para o seu lugar. Valores negativos sobem a partir de baixo; valores positivos caem de cima.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "Deslocamento inicial Z",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "Deslocamento inicial em Z (em blocos) a partir do qual um chunk acabado de carregar desliza para o seu lugar.",
+  "chunkanimatorembeddiumcompat.configuration.easing": "Suavização",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "Curva de suavização aplicada ao progresso da animação. CUBIC_OUT é o valor predefinido.",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "Desativar perto do jogador",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "Se estiver ativado, os chunks dentro do raio do jogador não são animados.",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "Raio do jogador",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "Raio (em blocos) à volta do jogador dentro do qual não há animação quando «Desativar perto do jogador» está ativado."
+}

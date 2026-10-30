@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "动画",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "启用",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "区块加载动画的总开关。",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "动画时长（毫秒）",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "每个区块的动画持续多长时间，单位为毫秒。",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "初始X偏移",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "刚加载的区块滑入原位前的初始X偏移（单位为方块）。",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "初始Y偏移",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "刚加载的区块滑入原位前的初始Y偏移（单位为方块）。负值时从下方升起，正值时从上方落下。",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "初始Z偏移",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "刚加载的区块滑入原位前的初始Z偏移（单位为方块）。",
+  "chunkanimatorembeddiumcompat.configuration.easing": "缓动曲线",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "应用于动画进度的缓动曲线。默认为CUBIC_OUT。",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "玩家附近禁用",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "开启后，玩家半径内的区块不播放动画。",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "玩家半径",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "开启“玩家附近禁用”时，玩家周围不播放动画的半径（单位为方块）。"
+}

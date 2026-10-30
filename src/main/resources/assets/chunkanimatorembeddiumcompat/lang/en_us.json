@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "Animation",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "Enabled",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "Master toggle for chunk loading animations.",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "Animation Duration (ms)",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "How long each chunk's animation lasts, in milliseconds.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "Start Offset X",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "Initial X offset (in blocks) from which a freshly built chunk slides into place.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "Start Offset Y",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "Initial Y offset (in blocks) from which a freshly built chunk slides into place. Negative values rise from below; positive values drop from above.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "Start Offset Z",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "Initial Z offset (in blocks) from which a freshly built chunk slides into place.",
+  "chunkanimatorembeddiumcompat.configuration.easing": "Easing",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "Easing curve applied to the animation progress. CUBIC_OUT is the default.",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "Disable Around Player",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "If on, chunks within Player Radius of the player do not animate.",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "Player Radius",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "Radius (in blocks) around the player within which animation is suppressed when Disable Around Player is on."
+}

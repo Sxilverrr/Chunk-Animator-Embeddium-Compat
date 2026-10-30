@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "Animation",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "Activé",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "Active ou désactive toutes les animations de chargement des chunks.",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "Durée de l'animation (ms)",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "Durée de l'animation de chaque chunk, en millisecondes.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "Décalage initial X",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "Décalage initial en X (en blocs) à partir duquel un chunk qui vient d'être chargé glisse jusqu'à sa place.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "Décalage initial Y",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "Décalage initial en Y (en blocs) à partir duquel un chunk qui vient d'être chargé glisse jusqu'à sa place. Avec une valeur négative, il monte depuis le bas; avec une valeur positive, il descend d'en haut.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "Décalage initial Z",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "Décalage initial en Z (en blocs) à partir duquel un chunk qui vient d'être chargé glisse jusqu'à sa place.",
+  "chunkanimatorembeddiumcompat.configuration.easing": "Courbe d'animation",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "Courbe appliquée à la progression de l'animation. CUBIC_OUT est la valeur par défaut.",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "Désactiver près du joueur",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "Si activé, les chunks dans le rayon du joueur ne sont pas animés.",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "Rayon du joueur",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "Rayon (en blocs) autour du joueur dans lequel l'animation est désactivée quand « Désactiver près du joueur » est activé."
+}

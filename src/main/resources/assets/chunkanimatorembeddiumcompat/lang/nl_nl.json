@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "Animatie",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "Ingeschakeld",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "Schakelt alle laadanimaties van chunks in of uit.",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "Animatieduur (ms)",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "Hoe lang de animatie van elke chunk duurt, in milliseconden.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "Startverschuiving X",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "Beginverschuiving op de X-as (in blokken) vanaf waar een net geladen chunk op zijn plek schuift.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "Startverschuiving Y",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "Beginverschuiving op de Y-as (in blokken) vanaf waar een net geladen chunk op zijn plek schuift. Bij negatieve waarden komt de chunk van onderen omhoog, bij positieve valt hij van bovenaf naar beneden.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "Startverschuiving Z",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "Beginverschuiving op de Z-as (in blokken) vanaf waar een net geladen chunk op zijn plek schuift.",
+  "chunkanimatorembeddiumcompat.configuration.easing": "Animatiecurve",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "Curve die op het verloop van de animatie wordt toegepast. CUBIC_OUT is de standaard.",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "Uitschakelen rond speler",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "Indien ingeschakeld, worden chunks binnen de spelerstraal niet geanimeerd.",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "Spelerstraal",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "Straal (in blokken) rond de speler waarbinnen geen animatie plaatsvindt als ‘Uitschakelen rond speler’ is ingeschakeld."
+}

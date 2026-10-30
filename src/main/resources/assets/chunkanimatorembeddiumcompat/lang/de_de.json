@@ -1,0 +1,19 @@
+{
+  "chunkanimatorembeddiumcompat.configuration.animation": "Animation",
+  "chunkanimatorembeddiumcompat.configuration.enabled": "Aktiviert",
+  "chunkanimatorembeddiumcompat.configuration.enabled.tooltip": "Schaltet alle Ladeanimationen für Chunks ein oder aus.",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs": "Animationsdauer (ms)",
+  "chunkanimatorembeddiumcompat.configuration.animationDurationMs.tooltip": "Wie lange die Animation jedes Chunks dauert, in Millisekunden.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX": "Startversatz X",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetX.tooltip": "Anfänglicher X-Versatz (in Blöcken), von dem aus ein gerade geladener Chunk an seinen Platz gleitet.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY": "Startversatz Y",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetY.tooltip": "Anfänglicher Y-Versatz (in Blöcken), von dem aus ein gerade geladener Chunk an seinen Platz gleitet. Bei negativen Werten steigt er von unten auf, bei positiven fällt er von oben herab.",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ": "Startversatz Z",
+  "chunkanimatorembeddiumcompat.configuration.startOffsetZ.tooltip": "Anfänglicher Z-Versatz (in Blöcken), von dem aus ein gerade geladener Chunk an seinen Platz gleitet.",
+  "chunkanimatorembeddiumcompat.configuration.easing": "Animationskurve",
+  "chunkanimatorembeddiumcompat.configuration.easing.tooltip": "Kurve, die auf den Fortschritt der Animation angewendet wird. CUBIC_OUT ist der Standard.",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer": "In Spielernähe deaktivieren",
+  "chunkanimatorembeddiumcompat.configuration.disableAroundPlayer.tooltip": "Wenn aktiviert, werden Chunks innerhalb des Spielerradius nicht animiert.",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius": "Spielerradius",
+  "chunkanimatorembeddiumcompat.configuration.playerRadius.tooltip": "Radius (in Blöcken) um den Spieler, in dem keine Animation abläuft, wenn „In Spielernähe deaktivieren“ aktiviert ist."
+}

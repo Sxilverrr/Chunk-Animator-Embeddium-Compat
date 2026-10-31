@@ -22,6 +22,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import org.spongepowered.asm.mixin.injection.Surrogate;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
@@ -58,6 +59,22 @@ public abstract class DefaultChunkRendererMixin {
             ChunkRenderListIterable renderLists, TerrainRenderPass renderPass, CameraTransform camera, CallbackInfo ci,
             boolean useBlockFaceCulling, ChunkShaderInterface shader, Iterator<ChunkRenderList> iterator,
             ChunkRenderList renderList, RenderRegion region, SectionRenderDataStorage storage, GlTessellation tessellation) {
+        chunkanimatorembeddiumcompat$drawAnimating(commandList, renderPass, camera, shader, renderList, region, storage, tessellation);
+    }
+
+    @Surrogate
+    private void chunkanimatorembeddiumcompat$drawAnimatingSections(ChunkRenderMatrices matrices, CommandList commandList,
+            ChunkRenderListIterable renderLists, TerrainRenderPass renderPass, CameraTransform camera, CallbackInfo ci,
+            boolean useBlockFaceCulling, ChunkShaderInterface shader, Iterator<ChunkRenderList> iterator, boolean mergeDraws,
+            ChunkRenderList renderList, RenderRegion region, SectionRenderDataStorage storage) {
+        RenderRegion.DeviceResources resources = region.getResources();
+        chunkanimatorembeddiumcompat$drawAnimating(commandList, renderPass, camera, shader, renderList, region, storage,
+                renderPass.isSorted() ? resources.getIndexedTessellation() : resources.getTessellation());
+    }
+
+    private void chunkanimatorembeddiumcompat$drawAnimating(CommandList commandList, TerrainRenderPass renderPass, CameraTransform camera,
+            ChunkShaderInterface shader, ChunkRenderList renderList, RenderRegion region, SectionRenderDataStorage storage,
+            GlTessellation tessellation) {
         ByteIterator sections = renderList.sectionsWithGeometryIterator(renderPass.isReverseOrder());
         if (sections == null) {
             return;

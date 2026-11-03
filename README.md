@@ -29,6 +29,7 @@ Oculus shaders work too. This has been tested with multiple shaders and Sodium/E
   - [Xenon](https://www.curseforge.com/minecraft/mc-mods/xenon)
   - [Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium)
   - [Magnesium](https://www.curseforge.com/projects/532724)
+  - [Emberbium](https://www.curseforge.com/minecraft/mc-mods/emberbium)
 
 These renderers are mutually exclusive, install only one.
 

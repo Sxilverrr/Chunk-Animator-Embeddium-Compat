@@ -72,6 +72,15 @@ public abstract class DefaultChunkRendererMixin {
                 renderPass.isSorted() ? resources.getIndexedTessellation() : resources.getTessellation());
     }
 
+    @Surrogate
+    private void chunkanimatorembeddiumcompat$drawAnimatingSections(ChunkRenderMatrices matrices, CommandList commandList,
+            ChunkRenderListIterable renderLists, TerrainRenderPass renderPass, CameraTransform camera, CallbackInfo ci,
+            boolean useBlockFaceCulling, ChunkShaderInterface shader, Iterator<ChunkRenderList> iterator, boolean mergeDraws,
+            boolean fadeIn, int fadeInNow, boolean fadeInBound, ChunkRenderList renderList, RenderRegion region,
+            SectionRenderDataStorage storage, GlTessellation tessellation) {
+        chunkanimatorembeddiumcompat$drawAnimating(commandList, renderPass, camera, shader, renderList, region, storage, tessellation);
+    }
+
     private void chunkanimatorembeddiumcompat$drawAnimating(CommandList commandList, TerrainRenderPass renderPass, CameraTransform camera,
             ChunkShaderInterface shader, ChunkRenderList renderList, RenderRegion region, SectionRenderDataStorage storage,
             GlTessellation tessellation) {

@@ -19,20 +19,27 @@ import me.jellysquid.mods.sodium.client.render.viewport.CameraTransform;
 import me.jellysquid.mods.sodium.client.util.iterator.ByteIterator;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import org.spongepowered.asm.mixin.injection.Surrogate;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
-
-import java.util.Iterator;
 
 @Mixin(value = DefaultChunkRenderer.class, remap = false)
 public abstract class DefaultChunkRendererMixin {
 
     @Shadow
     private MultiDrawBatch batch;
+
+    @Unique
+    private ChunkShaderInterface chunkanimatorembeddiumcompat$shader;
+
+    @Unique
+    private RenderRegion chunkanimatorembeddiumcompat$region;
+
+    @Unique
+    private GlTessellation chunkanimatorembeddiumcompat$tessellation;
 
     @Shadow
     private static void addDrawCommands(MultiDrawBatch batch, long pMeshData, int mask, int indexPointerMask) {
@@ -51,40 +58,33 @@ public abstract class DefaultChunkRendererMixin {
         return sections == null ? null : new AnimatingSectionSkippingIterator(sections, list.getRegion());
     }
 
+    @ModifyArg(method = "render",
+            at = @At(value = "INVOKE", target = "Lme/jellysquid/mods/sodium/client/render/chunk/DefaultChunkRenderer;setModelMatrixUniforms(Lme/jellysquid/mods/sodium/client/render/chunk/shader/ChunkShaderInterface;Lme/jellysquid/mods/sodium/client/render/chunk/region/RenderRegion;Lme/jellysquid/mods/sodium/client/render/viewport/CameraTransform;)V"),
+            index = 1)
+    private RenderRegion chunkanimatorembeddiumcompat$captureRegion(ChunkShaderInterface shader, RenderRegion region, CameraTransform camera) {
+        this.chunkanimatorembeddiumcompat$shader = shader;
+        this.chunkanimatorembeddiumcompat$region = region;
+        return region;
+    }
+
+    @ModifyArg(method = "render",
+            at = @At(value = "INVOKE", target = "Lme/jellysquid/mods/sodium/client/render/chunk/DefaultChunkRenderer;executeDrawBatch(Lme/jellysquid/mods/sodium/client/gl/device/CommandList;Lme/jellysquid/mods/sodium/client/gl/tessellation/GlTessellation;Lme/jellysquid/mods/sodium/client/gl/device/MultiDrawBatch;)V"),
+            index = 1)
+    private GlTessellation chunkanimatorembeddiumcompat$captureTessellation(GlTessellation tessellation) {
+        this.chunkanimatorembeddiumcompat$tessellation = tessellation;
+        return tessellation;
+    }
+
     @Inject(method = "render",
             at = @At(value = "INVOKE", target = "Lme/jellysquid/mods/sodium/client/render/chunk/DefaultChunkRenderer;executeDrawBatch(Lme/jellysquid/mods/sodium/client/gl/device/CommandList;Lme/jellysquid/mods/sodium/client/gl/tessellation/GlTessellation;Lme/jellysquid/mods/sodium/client/gl/device/MultiDrawBatch;)V",
-                    shift = At.Shift.AFTER),
-            locals = LocalCapture.CAPTURE_FAILSOFT)
+                    shift = At.Shift.AFTER))
     private void chunkanimatorembeddiumcompat$drawAnimatingSections(ChunkRenderMatrices matrices, CommandList commandList,
-            ChunkRenderListIterable renderLists, TerrainRenderPass renderPass, CameraTransform camera, CallbackInfo ci,
-            boolean useBlockFaceCulling, ChunkShaderInterface shader, Iterator<ChunkRenderList> iterator,
-            ChunkRenderList renderList, RenderRegion region, SectionRenderDataStorage storage, GlTessellation tessellation) {
-        chunkanimatorembeddiumcompat$drawAnimating(commandList, renderPass, camera, shader, renderList, region, storage, tessellation);
-    }
-
-    @Surrogate
-    private void chunkanimatorembeddiumcompat$drawAnimatingSections(ChunkRenderMatrices matrices, CommandList commandList,
-            ChunkRenderListIterable renderLists, TerrainRenderPass renderPass, CameraTransform camera, CallbackInfo ci,
-            boolean useBlockFaceCulling, ChunkShaderInterface shader, Iterator<ChunkRenderList> iterator, boolean mergeDraws,
-            ChunkRenderList renderList, RenderRegion region, SectionRenderDataStorage storage) {
-        RenderRegion.DeviceResources resources = region.getResources();
-        chunkanimatorembeddiumcompat$drawAnimating(commandList, renderPass, camera, shader, renderList, region, storage,
-                renderPass.isSorted() ? resources.getIndexedTessellation() : resources.getTessellation());
-    }
-
-    @Surrogate
-    private void chunkanimatorembeddiumcompat$drawAnimatingSections(ChunkRenderMatrices matrices, CommandList commandList,
-            ChunkRenderListIterable renderLists, TerrainRenderPass renderPass, CameraTransform camera, CallbackInfo ci,
-            boolean useBlockFaceCulling, ChunkShaderInterface shader, Iterator<ChunkRenderList> iterator, boolean mergeDraws,
-            boolean fadeIn, int fadeInNow, boolean fadeInBound, ChunkRenderList renderList, RenderRegion region,
-            SectionRenderDataStorage storage, GlTessellation tessellation) {
-        chunkanimatorembeddiumcompat$drawAnimating(commandList, renderPass, camera, shader, renderList, region, storage, tessellation);
-    }
-
-    private void chunkanimatorembeddiumcompat$drawAnimating(CommandList commandList, TerrainRenderPass renderPass, CameraTransform camera,
-            ChunkShaderInterface shader, ChunkRenderList renderList, RenderRegion region, SectionRenderDataStorage storage,
-            GlTessellation tessellation) {
-        ByteIterator sections = renderList.sectionsWithGeometryIterator(renderPass.isReverseOrder());
+            ChunkRenderListIterable renderLists, TerrainRenderPass renderPass, CameraTransform camera, CallbackInfo ci) {
+        ChunkShaderInterface shader = this.chunkanimatorembeddiumcompat$shader;
+        RenderRegion region = this.chunkanimatorembeddiumcompat$region;
+        GlTessellation tessellation = this.chunkanimatorembeddiumcompat$tessellation;
+        SectionRenderDataStorage storage = region.getStorage(renderPass);
+        ByteIterator sections = region.getRenderList().sectionsWithGeometryIterator(renderPass.isReverseOrder());
         if (sections == null) {
             return;
         }
